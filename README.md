@@ -3,7 +3,7 @@ freenom 中的域名在14天快过期的时候自动续期
 <br>
 The domain name in freenom is automatically renewed when it is about to expire in 14 days
 ---
-# How to use it
+# How to use it 如何使用
 
 ## Edit config.toml 编辑 config.toml 配置文件
 会优先读取环境变量的 FreenomBot.toml 变量，如果没有则读取同目录下的 config.toml 文件
