@@ -1,11 +1,13 @@
 # FreenomBot Freenom机器人
 freenom 中的域名在14天快过期的时候自动续期
+
 The domain name in freenom is automatically renewed when it is about to expire in 14 days
 ---
 # How to use it
 
 ## Edit config.toml 编辑 config.toml 配置文件
 会优先读取环境变量的 FreenomBot.toml 变量，如果没有则读取同目录下的 config.toml 文件
+
 The FreedomBot.toml variable of the environment variable will be read preferentially. If not, the config.toml file in the same directory will be read
 ``` toml
 # 浏览服务的自定义账号密码

@@ -1,0 +1,31 @@
+# 浏览服务的自定义账号密码
+[System]
+Account = "admin"
+Password = "123"
+CronTiming = "21:30"
+Lang = "zh"
+
+# 微信通知
+[WeChatNotify]
+Enable = true
+# Daily true为每天发，false只在更新时发通知
+Daily = true
+CorpID = "wwxxxxxxxxxxxxxx84"
+CorpSecret = "APIAKxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxU"
+AgentID = "1xxxxx2"
+
+# line 通知
+[LineNotify]
+Enable = false
+# Daily true为每天发，false只在更新时发通知
+Daily = true
+Token = "xxxx"
+
+# freenom 的账号密码
+[[Accounts]]
+Username = "xxxxxxxxxx@qq.com"
+Password = "xxxxxxxxxxxxxx"
+
+#[[Accounts]]
+#Username = "xxxxxxxx@gmail.com"
+#Password = "xxxxxxx"
