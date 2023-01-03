@@ -65,9 +65,9 @@ func readConf(filename string) error {
 		err error
 	)
 	// 先读取环境变量的配置文件
-	envConfig := os.Getenv(filename)
+	envConfig := os.Getenv("FreenomBot.toml")
 	if len(envConfig) > 0 {
-		if _, err = toml.Decode("FreenomBot.toml", &configData); err != nil {
+		if _, err = toml.Decode(envConfig, &configData); err != nil {
 			log.Fatal(err)
 		}
 		return err
