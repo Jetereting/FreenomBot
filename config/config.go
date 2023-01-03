@@ -68,7 +68,7 @@ func readConf(filename string) error {
 	envConfig := os.Getenv("FreenomBot.toml")
 	if len(envConfig) > 0 {
 		if _, err = toml.Decode(envConfig, &configData); err != nil {
-			log.Fatal(err)
+			log.Fatal(err, "readConf:", envConfig)
 		}
 		return err
 	}
